@@ -17,11 +17,16 @@ const RealTimeAudioAnalyzer = () => {
   
   // Demo audio files with embedded animal sounds
   const demoFiles = {
-    'Chimpanzee': '/api/placeholder/48/48',
-    'Dolphin': '/api/placeholder/48/48',
-    'Wolf': '/api/placeholder/48/48',
-    'Bird': '/api/placeholder/48/48',
-    'Elephant': '/api/placeholder/48/48'
+    'Chimpanzee': '/www.storyblocks.com/audio/stock/chimps-rekxust2uwsk0wxxpx5.html',
+    'Dolphin': '/www.storyblocks.com/audio/stock/dolphin-chirping-hlmqcbp3uvhk0wxxrfb.html',
+    'Wolf': '/www.storyblocks.com/audio/stock/bird-ambience-bgqxuqo2idhk0wxogg2.html',
+    'Bird': '/www.storyblocks.com/audio/stock/wolf-sgnmdlan8dsk0wxy1hb.html',
+    'Elephant': '/www.storyblocks.com/audio/stock/elephant-2-re0bjbp38psk0wxxs1w.html'
+    
+
+
+https://www.storyblocks.com/audio/stock/bird-ambience-bgqxuqo2idhk0wxogg2.html
+use these audio samples they don't need api
   };
   
   // Simulated species identification based on spectral content
