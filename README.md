@@ -108,6 +108,35 @@ Potential enhancements for future versions include:
 - Adding support for underwater recordings and non-vocal communication
 - Developing a standalone application that doesn't require Google Colab
 
+## Machine Learning Pipeline
+
+For users with labeled datasets of animal vocalizations, this repository includes
+`ml_pipeline.py` which provides a simple training and evaluation workflow.
+
+### Training a model
+
+Organize your dataset with one subdirectory per species label, for example:
+
+```
+dataset_root/
+    wolf/
+        howl1.wav
+    dolphin/
+        click1.wav
+```
+
+Then run:
+
+```bash
+python ml_pipeline.py dataset_root model.pkl
+```
+
+The script extracts mel spectrogram features and trains a RandomForest classifier.
+
+### Using the trained model
+
+The saved model can be loaded with `joblib` to classify new audio files.
+
 ## Contributing
 
 Contributions to improve the analyzer are welcome. Please feel free to submit pull requests or open issues to discuss potential enhancements.
